@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/picture"
+        app:layout_constraintBottom_toTopOf="@+id/imageResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageResult"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtResult" />
+
+
+
+    <LinearLayout
+        android:id="@+id/Main_bottom_navigation_tab"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/Main_EcoGallery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="0.25"
+            android:background="@color/colorBtnBackGround"
+            app:srcCompat="@drawable/ic_btn_eco_list_on" />
+
+
+        <ImageView
+            android:id="@+id/Main_Camera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="0.25"
+            app:srcCompat="@drawable/ic_btn_eco_cam_off" />
+
+
+        <ImageView
+            android:id="@+id/Main_Growup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="0.25"
+            app:srcCompat="@drawable/ic_btn_grow_off" />
+
+
+        <ImageView
+            android:id="@+id/Main_Userinfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="0.25"
+            app:srcCompat="@drawable/ic_btn_plee_book_off" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

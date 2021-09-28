@@ -26,9 +26,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".view.PleeInfoActivity"></activity>
-        <activity android:name=".view.MainActivity" >
-        </activity>
+        <activity android:name=".view.PleeInfoActivity" />
+        <activity android:name=".view.MainActivity"></activity>
         <activity android:name=".view.SignUpActivity" />
         <activity android:name=".view.SignInActivity">
             <intent-filter>
@@ -37,10 +36,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.UserInfoActivity">
-        </activity>
+        <activity android:name=".view.UserInfoActivity"></activity>
         <activity android:name=".view.PleeListActivity" />
-        <activity android:name=".view.GrowUpPleeActivity"></activity>
+        <activity android:name=".view.GrowUpPleeActivity" />
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"

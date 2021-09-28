@@ -43,14 +43,16 @@ class SignInActivity : AppCompatActivity() {
 //            finish()
 //        }
 //        else {
-            initView(this@SignInActivity)
-            goSignUpBtn.setOnClickListener {
-                startActivity(
-                    Intent(this@SignInActivity, SignUpActivity::class.java)
-                )
-            }
 
-            LogIn()
+        initView(this@SignInActivity)
+        goSignUpBtn.setOnClickListener {
+            startActivity(
+                Intent(this@SignInActivity, SignUpActivity::class.java)
+            )
+        }
+
+        LogIn()
+
 //        }
     }
 

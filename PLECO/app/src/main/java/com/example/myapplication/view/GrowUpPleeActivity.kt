@@ -84,6 +84,7 @@ class GrowUpPleeActivity : AppCompatActivity() {
                     GetPleeList(email)// COMPLETE 플리 리스트 Get
                 }
 
+
             }.await()
             async(Dispatchers.Main) {
                 delay(500)
